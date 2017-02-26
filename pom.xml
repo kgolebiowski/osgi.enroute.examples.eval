@@ -58,5 +58,6 @@
     <modules>
         <module>api</module>
         <module>simple.provider</module>
+        <module>bndrun</module>
     </modules>
 </project>
