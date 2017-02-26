@@ -36,3 +36,11 @@
 
 -runsystempackages.eqnx:		javax.script
 -runsystemcapabilities.dflt: 	${native_capability}
+
+-runbundles: \
+	org.apache.felix.configadmin;version='[1.8.8,1.8.9)',\
+	org.apache.felix.log;version='[1.0.1,1.0.2)',\
+	org.apache.felix.scr;version='[2.0.2,2.0.3)',\
+	org.eclipse.equinox.metatype;version='[1.4.100,1.4.101)',\
+	org.osgi.service.metatype;version='[1.3.0,1.3.1)',\
+	osgi.enroute.examples.eval.simple.provider;version='[1.0.0,1.0.1)'
