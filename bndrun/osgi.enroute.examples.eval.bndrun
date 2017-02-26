@@ -1,0 +1,38 @@
+-standalone:
+
+-plugin.examples.eval = \
+	aQute.bnd.repository.maven.pom.provider.BndPomRepository; \
+		snapshotUrls=https://oss.sonatype.org/content/repositories/osgi/; \
+		releaseUrls=https://repo1.maven.org/maven2/; \
+		pom=${.}/pom.xml; \
+		name=examples.eval; \
+		location=${.}/target/cached.xml
+
+-runrequires: 	\
+	osgi.identity; \
+		filter:='(osgi.identity=osgi.enroute.examples.eval.simple.provider)'
+
+-runfw: 		org.eclipse.osgi;version='[3.10.100.v20150529-1857,3.10.100.v20150529-1857]'
+
+-runtrace: 		false
+
+#
+# OSGi enRoute setting. These settings
+# fixup some of the issues around equinox
+# defaults.
+#
+
+-runee: 						JavaSE-1.8
+-resolve.effective:				resolve, active
+
+-runproperties.eqnx: 				\
+	osgi.console.enable.builtin=false, \
+	osgi.console=, \
+	org.osgi.service.http.port=8080
+
+-runpath.eqnx: 					osgi.enroute.equinox.log.adapter
+-runrequires.eqnx: \
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.log)'
+
+-runsystempackages.eqnx:		javax.script
+-runsystemcapabilities.dflt: 	${native_capability}
