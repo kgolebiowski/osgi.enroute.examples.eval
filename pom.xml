@@ -84,5 +84,6 @@
         <module>simple.provider</module>
         <module>bndrun</module>
         <module>command</module>
+        <module>parsii.provider</module>
     </modules>
 </project>
