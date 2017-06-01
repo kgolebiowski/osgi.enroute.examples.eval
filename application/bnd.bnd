@@ -1,0 +1,2 @@
+-includeresource: \
+	{static/osgi.enroute.examples.eval/index.html=src/main/resources/static/osgi.enroute.examples.eval/index.html}
