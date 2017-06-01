@@ -85,5 +85,6 @@
         <module>bndrun</module>
         <module>command</module>
         <module>parsii.provider</module>
+        <module>application</module>
     </modules>
 </project>
