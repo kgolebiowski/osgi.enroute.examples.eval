@@ -87,5 +87,6 @@
         <module>parsii.provider</module>
         <module>application</module>
         <module>test</module>
+        <module>integration-test</module>
     </modules>
 </project>
